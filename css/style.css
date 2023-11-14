@@ -41,30 +41,27 @@ body {
 /* Start Gallery */
 .gallery {
   background-color: #eee;
-
 }
 .row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto 100px;
+  grid-template-rows: auto;
   gap: 0.7rem;
 }
-.gallery .row .imag {
+.gallery .row .image {
   position: relative;
   border: 5px solid #fff;
   overflow: hidden;
-  display: flex;
-}
-
-.gallery .imag img {
-  width: 100%;
-  height: auto;
   display: block;
-  transition: all 0.5s ease;
-  object-fit: cover;
 }
 
-.gallery .imag .overlay {
+.gallery .image img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.gallery .image .overlay {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,46 +80,46 @@ body {
   visibility: hidden;
 }
 
-.gallery .imag:hover img {
+.gallery .image:hover img {
   transform: scale(1.4);
 }
-.gallery .imag:hover .overlay {
+.gallery .image:hover .overlay {
   transform: translateY(0px);
   visibility: visible;
 }
 
-.gallery .imag .overlay h2 {
+.gallery .image .overlay h2 {
   color: #fff;
   font-family: 'Amatic SC', sans-serif;
   font-size: 30px;
 }
 
-.gallery .imag .overlay p {
+.gallery .image .overlay p {
   color: #ddd;
   font-size: 16px;
   font-weight: 400;
 }
+.gallery .row .pizza {
+  grid-area: 1/ 1/ 3 /2;
+}
+.gallery .row .pizza-slice {
+  grid-area: 3/ 1/ 9 /2;
+}
+.gallery .row .meet {
+  grid-area: 1/ 2/ 7 /3;
+}
 
-.row .piza {
-  grid-area: 1 / 1 /2/ 1;
+.gallery .row .omelette {
+  grid-area: 7 / 2 / 11/ 3;
 }
-.row .pizza-slice {
-  grid-area: 2 / 1 / 4/ 2;
+.gallery .row .burger {
+  grid-area: 1 / 3 / 3 /4;
 }
-.row .meet {
-  grid-area: 1 / 2 /3 /3;
-}
+.gallery .row .kfc {
+  grid-area: 3 / 3 /6 /4;
 
-.row .deseart {
-  grid-area: 3/ 2 / 5 / 3;
 }
-.row .borger {
-  grid-area: 1 / 3 / 2 / 4;
-}
-.row .kfc {
-  grid-area: 2 / 3 /3 / 4;
-}
-.row .meatballs {
-  grid-area: 3 / 3 / 4 / 4;
+.gallery .row .meatballs {
+  grid-area: 6 / 3 /9 /4;
 }
 /* End Gallery */
