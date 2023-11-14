@@ -1,0 +1,63 @@
+@media (max-width: 767px) {
+  :root {
+    font-size: 10px;
+  }
+  .container {
+    width: 100%;
+  }
+}
+/* medium screen  */
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 95%;
+  }
+}
+/* large screen  */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 700px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width:701px) and (max-width: 1200px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+
+.row .piza {
+  grid-area: 1 / 1 /2/ 2;
+}
+.row .pizza-slice {
+  grid-area: 2 / 1 / 3/ 2;
+}
+ .row .meet {
+  grid-area: 3 / 1 /5 /2;
+}
+
+.row .deseart {
+  grid-area: 1/ 2 /2 / 3;
+}
+.row .kfc {
+  grid-area: 2 / 2 /3 / 3;
+}
+.row .borger {
+  grid-area: 3 / 2/ 4 / 3;
+}
+.row .meatballs {
+  grid-area: 2 / 2 / 3 /3;
+} 
+}
