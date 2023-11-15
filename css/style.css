@@ -48,6 +48,7 @@ body {
   grid-template-rows: auto;
   gap: 0.7rem;
 }
+
 .gallery .row .image {
   position: relative;
   border: 5px solid #fff;
